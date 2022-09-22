@@ -1,0 +1,58 @@
+main img {
+    margin-left: 15px;
+}
+
+main h2 {
+    color: rgb(170, 138, 100);
+    font-weight: 400;
+    text-align: center;
+}
+
+main h3 {
+    color: rgb(170, 138, 100);
+    font-weight: 200;
+    text-align: center;
+    margin-top: 0;
+}
+
+.bienvenidos {
+    width: 55%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.testimonios {
+    width: 45%;
+}
+
+.testimonios h2 {
+    margin-bottom: 5px;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bienvenido p {
+    font-size: 20px;
+    padding: 16px;
+}
+
+.testimonio {
+    background-color: antiquewhite;
+}
+
+.testimonio .cita {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    display: block;
+}
+
+.testimonio .autor {
+    font-size: 10px;
+    text-align: center;
+    display: block;
+    margin: 12px 0;
+}

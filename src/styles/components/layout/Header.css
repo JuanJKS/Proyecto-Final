@@ -1,0 +1,22 @@
+header {
+    background-color: beige;
+    padding: 16px 0;
+    display: flex;
+}
+
+header div {
+    color: black;
+    font-style: italic;
+    display: inline-block;
+}
+
+#josesito {
+    width: 40%;
+    padding-top: 17px;
+    text-align: center;
+}
+
+.pepito {
+    width: 40%;
+    text-align: center; 
+}

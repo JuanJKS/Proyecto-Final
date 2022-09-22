@@ -1,5 +1,7 @@
 import React from "react";
 
+import '../styles/components/pages/SobreMiPage.css';
+
 const SobreMiPage = (props) => {
     return (
         <div>

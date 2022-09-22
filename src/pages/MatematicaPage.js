@@ -1,5 +1,7 @@
 import React from "react";
 
+import '../styles/components/pages/MatematicaPage.css';
+
 const MatematicaPage = (props) => {
     return (
         <main className="holder">

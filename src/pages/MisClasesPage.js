@@ -1,5 +1,7 @@
 import React from "react";
 
+import '../styles/components/pages/MisClasesPage.css';
+
 const MisClasesPage = (props) => {
     return (
         <main className="holder">

@@ -1,16 +1,20 @@
-import { Link } from "react-router-dom";
+import React from "react";
+import { NavLink } from "react-router-dom";
+
+
+import '../../styles/components/layout/Nav.css';
 
 const Nav = (props) => {
     return (
         <nav>
             <div>
                 <ul className="holder">
-                    <li><Link to="/"><input type="button" value="HOME"/></Link></li>
-                    <li><Link to="/matematica"><input type="button" value="MATEMÁTICA"/></Link></li>
-                    <li><Link to="/fisica"><input type="button" value="FÍSICA"/></Link></li>
-                    <li><Link to="/misclases"><input type="button" value="MIS CLASES"/></Link></li>
-                    <li><Link to="/sobremi"><input type="button" value="SOBRE MÍ"/></Link></li>
-                    <li><Link to="/contacto"><input type="button" value="CONTACTO"/></Link></li>
+                    <li><NavLink to="/home" className={({ isActive }) => (isActive ? "activo" : "")}>HOME</NavLink></li>
+                    <li><NavLink to="/matematica" className={({ isActive }) => (isActive ? "activo" : "")}>MATEMÁTICA</NavLink></li>
+                    <li><NavLink to="/fisica" className={({ isActive }) => (isActive ? "activo" : "")}>FÍSICA</NavLink></li>
+                    <li><NavLink to="/misclases" className={({ isActive }) => (isActive ? "activo" : "")}>MIS CLASES</NavLink></li>
+                    <li><NavLink to="/sobremi" className={({ isActive }) => (isActive ? "activo" : "")}>SOBRE MÍ</NavLink></li>
+                    <li><NavLink to="/contacto" className={({ isActive }) => (isActive ? "activo" : "")}>CONTACTO</NavLink></li>
                 </ul>
             </div>
         </nav>

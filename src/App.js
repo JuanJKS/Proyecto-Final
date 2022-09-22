@@ -1,4 +1,5 @@
 import './App.css';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Header from './components/layout/Header';
@@ -20,7 +21,7 @@ function App() {
       <BrowserRouter>
         <Nav/>
         <Routes>
-          <Route path='/' element={<HomePage/>}/>
+          <Route path='/home' element={<HomePage/>}/>
           <Route path='matematica' element={<MatematicaPage/>}/>
           <Route path='fisica' element={<FisicaPage/>}/>
           <Route path='misclases' element={<MisClasesPage/>}/>

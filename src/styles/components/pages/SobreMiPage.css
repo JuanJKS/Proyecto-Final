@@ -1,0 +1,48 @@
+#prueba {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.mifoto h1 {
+    font-size: 40px;
+    font-weight: 400;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    margin-left: 10px;
+}
+
+div.mifoto img {
+    border-radius: 50%;   
+}
+
+.mifoto {
+    padding: 0;
+    background-color: beige;
+    display: flex;
+}
+
+.formacion {
+    width: 50%;
+}
+
+.formacion h2 {
+    margin-bottom: 5px;
+}
+
+.formacion li {
+    margin: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.descripcion {
+    width: 40%;
+}
+
+#imagen {
+   text-align: center;
+   margin-top: 20px;
+}
