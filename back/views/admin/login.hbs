@@ -1,0 +1,24 @@
+<div class="container-lg iniciar-sesion">
+    <form action="/admin/login" method="post" class="row g-3 needs-validation" novalidate>
+        <div class="col-12">
+            <label for="validationCustom01" class="form-label">Usuario</label>
+            <input type="text" class="form-control" id="validationCustom01" name="usuario" placeholder="Ingrese su usuario" required />
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-12">
+            <label for="validationCustom02" class="form-label">Password</label>
+            <input type="password" class="form-control" id="validationCustom02" name="password" placeholder="Ingrese su password" required />
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary boton-form" type="submit">Ingresar</button>
+        </div>
+    </form>
+    {{#if error}}
+        <p>Los datos ingresados son incorrectos.</p>
+    {{/if}}
+</div>

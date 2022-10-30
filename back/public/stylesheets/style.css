@@ -1,0 +1,162 @@
+/*ESTOS SON ESTILOS GENERALES DEL FRONT*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  color: white;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+h1, h2 {
+  color: black;
+}
+
+/*ESTOS SON ESTILOS DEL HEADER DEL FRONT*/
+
+.contenedor-nav-logo {
+  width: 100%;
+  border-bottom: 1px solid grey;
+  background: linear-gradient(180deg,#0856bc 0%, #03fee0 90%);
+}
+
+@media (max-width: 991px) {
+  .centrame-la-mierda-del-nav {
+      padding-left: 0;
+      padding-right: 0;
+  }
+}
+
+/*ESTOS SON ESTILOS DEL NAV DEL FRONT*/
+
+.navbar-nav li {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.activo {
+  border-bottom: 5px solid #ffce8e;
+  border-radius: 400px;
+  color: rgba(0, 0, 0, 0.55) !important;
+}
+
+.navbar-nav li a {
+  margin: 10px;
+}
+
+.navbar-nav li a:hover {
+  color: #ffce8e;
+}
+
+.navbar {
+  height: 65px;
+  background-color: transparent !important;
+}
+
+.collapse {
+  justify-content: center;
+}
+
+.que-el-nav-vaya-de-punta-a-punta {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+      background: linear-gradient(180deg,#03fee0 0%, #0856bc 90%);
+      filter: opacity(92%);
+  }
+
+  .navbar-collapse a {
+      color: black;
+  }
+
+  .activo {
+      border-bottom: none;
+      border-radius: 5px;
+      color: black !important;
+      background: linear-gradient(180deg,#0856bc 0%, #0856bc 90%);
+  }
+
+  .navbar {
+      padding: 0;
+  }
+
+  .que-el-nav-vaya-de-punta-a-punta {
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+  .navbar-brand {
+      padding-left: 10px;
+  }
+
+  .navbar-toggler {
+      margin-right: 100px;
+  }
+}
+
+@media (max-width: 458px) {
+  .navbar-toggler {
+      margin-left: 10px;
+  } 
+}
+
+.navbar-brand {
+  max-width: 300px;
+  max-height: 65px;
+}
+
+/*ESTOS SON ESTILOS DEL FOOTER DEL FRONT*/
+
+.footer-page {
+  background: linear-gradient(180deg,#0856bc 0%, #03fee0 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+}
+
+/*ESTILOS DE LA PÁGINA DE LOGUEO*/
+
+.iniciar-sesion {
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.iniciar-sesion label {
+  color: black;
+}
+
+.iniciar-sesion input {
+  background: linear-gradient(180deg,#03fee0 0%, #03fee0 90%);
+}
+
+.iniciar-sesion button {
+  background: linear-gradient(180deg,#0856bc 0%, #0856bc 90%);
+}
+
+.iniciar-sesion p {
+  color: red;
+  padding-top: 10px;
+}
+
+/*ESTILOS DE LA PÁGINA DE OPINIONES*/
+
+.text-end {
+  color: black;
+}
+
+.mensaje-bienvenida {
+  margin-top: 50px;
+}
