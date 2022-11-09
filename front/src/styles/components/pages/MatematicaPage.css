@@ -1,0 +1,21 @@
+.section-maths {
+    background-color: rgba(8, 86, 188, .09);
+
+    /*background: radial-gradient(ellipse farthest-corner at top center, #06afd2 0%, #ffffff 90%);*/
+    /*background-color: #06afd2;*/
+    /*background: linear-gradient(90deg,#ffaad2 0%, #06afd2 90%);*/
+    /*background: radial-gradient(circle farthest-corner at top left, #ffaad2 0%, #06afd2 90%);*/
+    /*background-color: #0856bc;*/
+    /*background-color: rgba(8, 86, 188, .5);*/
+}
+
+.section-maths h2 {
+    color: grey;
+}
+
+.section-maths p {
+    color: black;
+    
+    /*font-size: 16px;*/
+    /*font-weight: bold;*/
+}

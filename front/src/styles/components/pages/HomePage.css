@@ -1,0 +1,54 @@
+.section-home {
+    background: linear-gradient(160deg,#0856bc 20%, #ffaad2 80%);
+    
+    /*background-color: #0856bc;*/
+    /*background: linear-gradient(90deg,#0856bc 0%, #ffaad2 80%);*/
+}
+
+.carrousel-home {
+    margin-bottom: 10px;
+}
+
+.carousel-item {
+    background-color: transparent;
+    
+    /*background-color: #1b1b32;*/
+    /*background: linear-gradient(90deg,#ff0000 0%, #00ff00 80%);*/
+}
+
+/*NO ENTIENDO PORQUÉ ESTO DEJÓ DE SER NECESARIO PARA QUE EL CARROUSEL QUEDE BIEN (LA TENÍA EL MISMO DIV QUE TIENE LA CLASS CAROUSEL-ITEM)
+.centrar-imagen-padre {
+    text-align: center;
+}*/
+
+.img-carrousel {
+    margin: 0px auto;
+}
+
+.total-container h6 {
+    line-height: 150%;
+}
+
+.total-container h6 span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.row-grid-home {
+    gap: 60px;
+    margin-top: 35px;
+}
+
+.row-grid-home p {
+    line-height: 170%;
+}
+
+@media (max-width: 767px) {
+    .row-grid-home {
+        gap: 10px;
+    }
+    
+    .row-grid-home p {
+        line-height: 1.2em;
+    }
+}

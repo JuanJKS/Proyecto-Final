@@ -1,0 +1,16 @@
+.card img {
+    width: 100%;
+}
+
+.card-body {
+    color: black;
+}
+
+.card-body.card-modalities {
+    background: linear-gradient(180deg,#ffce8e 1%, #ffaad2 90%);
+}
+
+.card-modalities p {
+    text-align: justify;
+}
+

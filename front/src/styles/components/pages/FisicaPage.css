@@ -1,0 +1,13 @@
+.section-physical {
+    background: radial-gradient(circle farthest-corner at center center, #0856bc 0%, #06afd2 90%);
+
+    /*background: linear-gradient(90deg,#ffaad2 0%, #ffffff 90%);*/
+    /*background: radial-gradient(ellipse farthest-corner at top center, #06afd2 0%, #ffffff 90%);*/
+    /*background-color: #06afd2;*/
+    /*background: radial-gradient(circle farthest-side at center center, #ffaad2 0%, #06afd2 90%);*/
+    /*background-color: rgba(8, 86, 188, .5);*/
+}
+
+.section-physical h2 {
+    color: whitesmoke;
+}

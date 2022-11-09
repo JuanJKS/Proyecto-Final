@@ -1,0 +1,83 @@
+.section-contact {
+    background: linear-gradient(180deg,#0856bc 1%, #ffaad2 90%);
+
+    /*background: radial-gradient(ellipse farthest-corner at top center, #0856bc 0%, #ffffff 90%);*/
+    /*background: linear-gradient(180deg,#ffaad2 1%, #0856bc 90%);*/
+    /*background: linear-gradient(180deg,#ffce8e 1%, #ffaad2 90%);*/
+    /*background: linear-gradient(180deg,#0856bc 1%, #ffce8e 90%);*/
+}
+
+.section-contact h2 {
+    color: whitesmoke;
+}
+
+.container-form-maps {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-form {
+    padding: 15px;
+}
+
+#validationTextarea {
+    resize: none;
+    height: 160px !important;
+}
+
+.button-form {
+    background-color: #0856bc;
+
+    /*background-color: #03fee0;*/
+    /*background: linear-gradient(180deg,#0856bc 0%, #03fee0 90%);*/
+    /*background: linear-gradient(180deg,#ffce8e 1%, #ffaad2 90%);*/
+}
+
+.button-form:hover {
+    background: linear-gradient(180deg,#0856bc 0%, #03fee0 90%);
+
+    /*background: linear-gradient(180deg,#0856bc 1%, #ffaad2 90%);*/
+}
+
+.container-maps {
+    padding: 15px;
+}
+
+.container-final-contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 180px;
+    padding-bottom: 65px;
+}
+
+.container-final-contact .div-quadrants-icons {
+    transition-property: all;
+    transition-duration: 0.99999999999s;
+    color: #0856bc;
+
+    /*color: #ffaad2;*/
+    /*color: #ffce8e;*/
+    /*color: #06afd2;*/
+    /*color: #03fee0;*/
+}
+
+.container-col-final-contact:hover .div-quadrants-icons {
+    transform: rotate3d(0, 1, 0, 180deg);
+    transition-property: all;
+    transition-duration: 0.9999999999s;
+}
+
+@media (max-width: 1199px) {
+    .container-final-contact {
+        padding: 0;
+        font-size: 18px;
+    } 
+
+    .container-col-final-contact {
+        padding: 10px 0;
+    }
+}

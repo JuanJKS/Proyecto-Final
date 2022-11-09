@@ -1,0 +1,36 @@
+.section-myclasses {
+    background-color: whitesmoke;
+}
+
+.section-myclasses h2 {
+    color: grey;
+
+    /*color: #ffaad2;*/
+    /*color: #ffce8e;*/
+    /*color: #06afd2;*/
+    /*color: #0856bc;*/
+}
+
+.container-cards {
+    margin-top: 0;
+}
+
+.secondary-title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.carousel-indicators {
+    margin-bottom: 0;
+}
+
+.prev-testimony {
+    background-color: grey;
+    margin-right: 50px;
+}
+
+.next-testimony {
+    background-color: grey;
+    margin-left: 50px;
+}
+

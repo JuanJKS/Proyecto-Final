@@ -1,0 +1,25 @@
+.container-nav-logo {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid grey;
+    background: linear-gradient(180deg,#0856bc 0%, #03fee0 90%);
+
+    /*background: linear-gradient(180deg,#0856bc 0%, #ffaad2 90%);*/
+    /*background: linear-gradient(180deg,#0856bc 0%, #ffce8e 90%);*/
+    /*background: linear-gradient(180deg,#0856bc 0%, #06afd2 90%);*/
+
+    /*LO SIGUIENTE ES UN INTENTO PARA QUE EL HEADER APAREZCA BAJANDO DE A POCO CUANDO SE CARGA LA PÁGINA (EFECTO PÁGINA FLOR)*/
+    /*top: -70px;
+    transform: translate(1px, 70px);
+    transition-property: all;
+    transition-duration: 0.9s;*/
+}
+
+@media (max-width: 991px) {
+    .container-nav {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

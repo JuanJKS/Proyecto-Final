@@ -1,0 +1,27 @@
+/*NO ENTIENDO PORQUÉ ESTO DEJÓ DE SER NECESARIO PARA QUE EL CARROUSEL QUEDE BIEN (LA TENÍA EL MISMO DIV QUE TIENE LA CLASS CAROUSEL-ITEM QUE ESTÁ EN MISCLASESPAGE.JS)
+.centrar-testimonio-padre {
+    text-align: center;
+}*/
+
+.testimony-carrousel {
+    margin: 0 auto;
+    max-width: 83%;
+    background-color: #ffce8e;
+
+    /*background-color: #ffaad2;*/
+    /*background-color: #06afd2;*/
+    /*background-color: #0856bc;*/
+    /*background-color: #03fee0;*/
+}
+
+.card-header {
+    color: grey;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.blockquote-footer {
+    margin-top: 5px;
+    margin-bottom: 5px !important;
+}
