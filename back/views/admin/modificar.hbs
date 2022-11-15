@@ -1,0 +1,26 @@
+<div class="container-lg text-center">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>Modificar la opinión</h4>
+            <form action="/admin/opiniones/modificar" method="post">
+                <input type="hidden" value="{{opinion.id_op}}" name="id">
+                <div class="form-group">
+                    <label for="">Opinión</label>
+                    <textarea type="text" class="form-control" name="opinion">{{opinion.opinion}}</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">Autor</label>
+                    <input type="text" class="form-control" name="autor" value="{{opinion.autor}}">
+                </div>
+                <div class="form-group">
+                    <label for="">Zona</label>
+                    <input type="text" class="form-control" name="zona" value="{{opinion.zona}}">
+                </div>
+                <button type="submit" class="btn btn-primary">Modificar</button>
+            </form>
+            {{#if error}}
+                <p>{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>

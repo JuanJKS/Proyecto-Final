@@ -1,0 +1,22 @@
+<div class="container-lg text-center">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>Agregar una opinión</h4>
+            <form action="/admin/opiniones/agregar" method="post">
+                <div class="mb-3 row">
+                    <textarea type="text" class="form-control" placeholder="Opinión" name="opinion"></textarea>
+                </div>
+                <div class="mb-3 row">
+                    <input type="text" class="form-control" placeholder="Autor" name="autor">
+                </div>
+                <div class="mb-3 row">
+                    <input type="text" class="form-control" placeholder="Zona" name="zona">
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+            {{#if error}}
+                <p>{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>
