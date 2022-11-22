@@ -4,13 +4,24 @@
 
 .card-body {
     color: black;
+    color: #eddac5;
 }
 
 .card-body.card-modalities {
     background: linear-gradient(180deg,#ffce8e 1%, #ffaad2 90%);
+    background: #528ca7;
+    background: #104164;
+    background: #1f1e2a;
+}
+
+.card-body.card-modalities h5 {
+    font-weight: bold;
+    font-size: 25px;
+    color: whitesmoke;
 }
 
 .card-modalities p {
     text-align: justify;
+    color: #eddac5;
 }
 

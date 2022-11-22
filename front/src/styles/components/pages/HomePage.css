@@ -1,8 +1,11 @@
 .section-home {
     background: linear-gradient(160deg,#0856bc 20%, #ffaad2 80%);
-    
-    /*background-color: #0856bc;*/
-    /*background: linear-gradient(90deg,#0856bc 0%, #ffaad2 80%);*/
+    background: #eddac5;
+    color: #1f1e2a;
+}
+
+.section-home h2 {
+    font-weight: 900;
 }
 
 .carrousel-home {
@@ -27,10 +30,12 @@
 
 .total-container h6 {
     line-height: 150%;
+    font-weight: bold;
+    font-weight: 900;
 }
 
 .total-container h6 span {
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-style: italic;
 }
 

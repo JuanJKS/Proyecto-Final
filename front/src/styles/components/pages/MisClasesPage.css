@@ -1,9 +1,11 @@
 .section-myclasses {
     background-color: whitesmoke;
+    background: #eddac5;
 }
 
 .section-myclasses h2 {
     color: grey;
+    color: #1f1e2a;
 
     /*color: #ffaad2;*/
     /*color: #ffce8e;*/

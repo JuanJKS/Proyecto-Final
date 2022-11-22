@@ -1,5 +1,8 @@
 .section-contact {
     background: linear-gradient(180deg,#0856bc 1%, #ffaad2 90%);
+    background: #528ca7;
+    color: #1f1e2a;
+    font-weight: 900;
 
     /*background: radial-gradient(ellipse farthest-corner at top center, #0856bc 0%, #ffffff 90%);*/
     /*background: linear-gradient(180deg,#ffaad2 1%, #0856bc 90%);*/
@@ -9,6 +12,10 @@
 
 .section-contact h2 {
     color: whitesmoke;
+}
+
+.section-contact h4 {
+    font-weight: 900;
 }
 
 .container-form-maps {
@@ -27,6 +34,8 @@
 
 .button-form {
     background-color: #0856bc;
+    background: #1f1e2a;
+    border: none;
 
     /*background-color: #03fee0;*/
     /*background: linear-gradient(180deg,#0856bc 0%, #03fee0 90%);*/
@@ -34,13 +43,16 @@
 }
 
 .button-form:hover {
-    background: linear-gradient(180deg,#0856bc 0%, #03fee0 90%);
-
+    background: linear-gradient(180deg,#36a1cd 0%, #104164 90%);
     /*background: linear-gradient(180deg,#0856bc 1%, #ffaad2 90%);*/
 }
 
 .container-maps {
     padding: 15px;
+}
+
+.container-maps iframe {
+    margin-top: 10px;
 }
 
 .container-final-contact {
@@ -58,6 +70,7 @@
     transition-property: all;
     transition-duration: 0.99999999999s;
     color: #0856bc;
+    color: #1f1e2a;
 
     /*color: #ffaad2;*/
     /*color: #ffce8e;*/

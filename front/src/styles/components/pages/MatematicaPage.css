@@ -1,5 +1,10 @@
 .section-maths {
     background-color: rgba(8, 86, 188, .09);
+    background: #1f1e2a;
+    border-bottom: 10px solid #a9edeb;
+    border-top: 10px solid #a9edeb;
+    border-bottom: 5px solid #528ca7;
+    border-top: 5px solid #528ca7;
 
     /*background: radial-gradient(ellipse farthest-corner at top center, #06afd2 0%, #ffffff 90%);*/
     /*background-color: #06afd2;*/
@@ -11,10 +16,15 @@
 
 .section-maths h2 {
     color: grey;
+    color: #a9edeb;
+    color: #528ca7;
+    color: #eddac5;
 }
 
 .section-maths p {
-    color: black;
+    color: #eddac5;
+    line-height: normal;
+    letter-spacing: 1px;
     
     /*font-size: 16px;*/
     /*font-weight: bold;*/

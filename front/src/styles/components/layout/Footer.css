@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: center;
     height: 55px;
-    background: linear-gradient(180deg,#0856bc 0%, #03fee0 90%);
-
-    /*background-color: #ffce8e;*/
+    background: #104164;
+    color: #a9edeb;
+    color: whitesmoke;
+    font-weight: bold;
 }

@@ -1,7 +1,7 @@
 var pool = require('./bd');
 
 async function getOpiniones() {
-    var query = 'SELECT * FROM opiniones';
+    var query = 'SELECT * FROM opiniones ORDER BY id_op ASC';
     var rows = await pool.query(query);
     return rows;
 }

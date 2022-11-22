@@ -1,11 +1,28 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
+import axios from "axios";
+
 import Testimonios from "../components/layout/Testimonios";
 import TarjetaModalidades from "../components/layout/TarjetaModalidades";
 import EspecialidadesColegios from "../components/layout/EspecialidadesColegios";
 
 import '../styles/components/pages/MisClasesPage.css';
 
-const MisClasesPage = (props) => {
+const ClasesPagePrueba = (props) => {
+    const [loading, setLoading] = useState(false);
+    const [opiniones, setOpiniones] = useState([]);
+
+    useEffect(() => {
+        const cargarOpiniones = async () => {
+            setLoading(true);
+            const response = await axios.get('http://localhost:3000/api/opiniones');
+            setOpiniones(response.data);
+            setLoading(false);
+        };
+
+        cargarOpiniones();
+    }, []);
+
+
     return (
         <div className="section-myclasses">
             <div id="misclases" className="container-lg text-center total-container">
@@ -47,76 +64,20 @@ const MisClasesPage = (props) => {
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
                     </div>
                     <div className="carousel-inner">
-                        <div className="carousel-item active">
-                            <Testimonios 
-                                opinion="Quiero agradecer al profesor Juan Cruz, ya que Nicolás logró aprobar matemáticas. Se compromete al máximo con el objetivo y se preocupa por que aprenda."
-                                autor="Graciela"
-                                zona="Rosario"
-                            />
-                        </div>
-                        <div className="carousel-item">
-                        <Testimonios 
-                                opinion="Lo recomiendo! Llevé a mi hijo de 11 años porque tenía problemas en matemáticas y supo explicarle. Gracias por tu gran paciencia Juan!!!"
-                                autor="Nicolás"
-                                zona="Colegiales"
-                            />
-                        </div>
-                        <div className="carousel-item">
-                        <Testimonios 
-                                opinion="La primera vez que lo contacté casi no tenía tiempo de preparación y no aprobé, cosa que me dijo de entrada desde su sinceridad. Seguimos trabajando para la siguiente instancia y me fue genial. Sos un genio!"
-                                autor="Antonella"
-                                zona="San Telmo"
-                            />
-                        </div>
-                        <div className="carousel-item">
-                        <Testimonios 
-                                opinion="A mis hijos siempre les costó mucho matemática, probé con muchos profes e igual les costaba. Juan los acompañó durante todo este año y no tuvieron que recuperar nada. Muchas gracias Juan."
-                                autor="Fabiola"
-                                zona="Caballito"
-                            />
-                        </div>
-                        <div className="carousel-item">
-                        <Testimonios 
-                                opinion="La verdad que su clase virtual es un espectáculo, se le entiende bárbaro y es todo muy fluido. Logra que uno llegue a los resultados por sus propios medios..."
-                                autor="Ezequiel"
-                                zona="Neuquén"
-                            />
-                        </div>
-                        <div className="carousel-item">
-                        <Testimonios 
-                                opinion="A pesar de la distancia, logra hacerse entender perfecto y las clases se te pasan volando. Muchas gracias Juan, pensé que no iba a poder, y por acá me resultaba re difícil conseguir profe."
-                                autor="Valeria"
-                                zona="Corrientes"
-                            />
-                        </div>
-                        <div className="carousel-item">
-                        <Testimonios 
-                                opinion="Excelente profesor, es muy claro y práctico a la hora de enseñar y tiene buen método para captar la atención del alumno."
-                                autor="Ariel"
-                                zona="Flores"
-                            />
-                        </div>
-                        <div className="carousel-item">
-                        <Testimonios 
-                                opinion="Soy una persona grande, tengo mas de 50 años y hacía una eternidad que no practicaba la matemática, tenía mucho miedo. Gracias por tu infinita paciencia, es increíble el don que tenés para explicar."
-                                autor="Alejandra"
-                                zona="Villa Urquiza"
-                            />
-                        </div>
-                        <div className="carousel-item">
-                        <Testimonios 
-                                opinion="No te voy a decir que ahora me gusta matemática, pero la verdad que al menos no me molesta ir a tus clases jaja, sos groso Juan."
-                                autor="Hernán"
-                                zona="Saavedra"
-                            />
-                        </div>
-                        <div className="carousel-item">
-                        <Testimonios 
-                                opinion="Es exigente, por momentos molesta que te corrija hasta el mas mínimo detalle, pero la verdad es que todo ese esfuerzo que conlleva su proceso luego se ve en las notas."
-                                autor="Matías"
-                                zona="Palermo"
-                            />
-                        </div>
+                        {
+                            loading ? (
+                                <p>Cargando...</p>
+                            ) : (
+                                opiniones.map(item => 
+                                    <div id="container-opinion-carrousel" key={item.id_op} className="carousel-item active">
+                                        <Testimonios 
+                                            key={item.id_op}
+                                            opinion={item.opinion}
+                                            autor={item.autor}
+                                            zona={item.zona} />
+                                    </div>)
+                                )
+                            } 
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                         <span className="carousel-control-prev-icon prev-testimony" aria-hidden="true"></span>
@@ -127,13 +88,9 @@ const MisClasesPage = (props) => {
                         <span className="visually-hidden">Next</span>
                     </button>
                 </div>
-                {/*<div className="col-12 secondary-title">
-                    <h2 className="important-title">Especialidades</h2>
-                </div>
-    <EspecialidadesColegios />*/}
             </div>
         </div>
     );
 }
 
-export default MisClasesPage;
+export default ClasesPagePrueba;

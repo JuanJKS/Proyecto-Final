@@ -39,7 +39,7 @@ router.post('/agregar', async (req, res, next) => {
       res.render('admin/agregar', {
         layout: 'admin/layout',
         error: true,
-        message: 'No se cargo la novedad'
+        message: 'No se cargó el testimonio'
       })
   }
 });
@@ -69,9 +69,7 @@ router.post('/modificar', async (req, res, next) => {
       autor: req.body.autor,
       zona: req.body.zona
     };
-    //console.log(obj);
-    //console.log(req.body.id);
-
+    
     await opinionesModel.modificarOpinionById(obj, req.body.id);
     res.redirect('/admin/opiniones');
   } catch (error) {
@@ -79,7 +77,7 @@ router.post('/modificar', async (req, res, next) => {
     res.render('admin/modificar', {
       layout: 'admin/layout',
       error: true,
-      message: 'No se modifico la novedad'
+      message: 'No se modificó el testimonio'
     })
   }
 });

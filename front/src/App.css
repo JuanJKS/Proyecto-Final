@@ -6,21 +6,10 @@
 html,
 body {
   color: white;
-  /*background-color: #1b1b32;*/
-  /*background: linear-gradient(90deg,#1b00ff 0%, #00bbff 80%);*/
-  /*background: linear-gradient(90deg,#06afd2 0%, #ffaad2 90%);*/
-  /*background: linear-gradient(90deg,#06afd2 0%, #0856bc 90%);*/
-  /*background: linear-gradient(90deg,#03fee0 0%, #0856bc 90%);*/
-  /*background: linear-gradient(90deg,#0856bc 0%, #03fee0 90%);*/
-  /*background: radial-gradient(circle farthest-corner at center center, #0856bc 50%, #03fee0 80%);*/
-  /*background: radial-gradient(circle farthest-corner at center center, #1b00ff 0%, #00bbff 80%);*/
-  /*background: radial-gradient(ellipse farthest-corner at center center, #1b00ff 0%, #00bbff 80%);*/
-  /*background: repeating-radial-gradient(circle farthest-corner at center center, #1b00ff 0%, #00bbff 20%);*/
-  /*font-family: 'Open Sans', sans-serif;*/
-  /*font-family: 'Roboto', sans-serif;*/
-  font-family: 'Hammersmith One', sans-serif;
+  /*font-family: 'Hammersmith One', sans-serif;*/
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
-  line-height: 20px;
+  /*line-height: 20px;*/
 }
 
 .total-container {

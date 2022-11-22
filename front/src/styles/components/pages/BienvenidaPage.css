@@ -12,34 +12,22 @@
     align-items: center;
     justify-content: center;
     box-shadow: 6px 6px 25px #03fee0;
+    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 2px black;
 
-    /*filter: sepia(60%);*/
+    filter: sepia(70%);
 
     /*filter: contrast(150%) saturate(400%);*/ /*PUEDE ANDAR*/
 
     /*filter: contrast(150%);*/ /*POR AHORA ESTE*/
 
-    filter: saturate(400%); /*ESTE TAMBIÉN ME GUSTA*/
-
-    /*filter: hue-rotate(60deg) contrast(150%);*/
-
-    /*OPCIÓN PARA USAR EL FILTRO QUE INVIERTE TONALIDADES*/
-    /*filter: invert(100%);
-    box-shadow: 6px 6px 25px #fc011f;*/
+    /*filter: saturate(400%);*/
 }
 
-.container-background h2 {
+/*.container-background h2 {
     font-size: 7.5vw;
     font-weight: 400;
     text-align: center;
     text-shadow: 10px 10px 5px #0005;
-
-    /*background: linear-gradient(180deg,#0856bc 1%, #ffaad2 90%);*/
-    background: radial-gradient(circle farthest-corner at center center, #ffaad2 0%, #0856bc 80%);
-    /*-webkit-background-clip: text;*/
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    /*OPCIÓN PARA USAR EL FILTRO QUE INVIERTE TONALIDADES*/
-    /*background: radial-gradient(circle farthest-corner at center center, #00552d 0%, #f7a943 80%);*/ 
-}
+    color: #104164;
+}*/

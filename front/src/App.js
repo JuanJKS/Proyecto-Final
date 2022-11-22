@@ -9,6 +9,7 @@ import MisClasesPage from './pages/MisClasesPage';
 import ContactoPage from './pages/ContactoPage';
 import BotonWhats from './components/layout/BotonWhats';
 import BienvenidaPage from './pages/BienvenidaPage';
+import ClasesPagePrueba from './pages/ClasesPagePrueba';
 
 function App() {
   window.addEventListener('load', function() {
@@ -39,7 +40,7 @@ function App() {
     const observer = new IntersectionObserver(addActive, {
       root: null,
       rootMargin: '0px 0px 0px 0px',
-      threshold: 0.5
+      threshold: 0.55
   });
 
   observer.observe(welcomePageEl); 
@@ -58,7 +59,8 @@ function App() {
       <HomePage />
       <MatematicaPage />
       <FisicaPage />
-      <MisClasesPage />
+      <ClasesPagePrueba />
+      {/*<MisClasesPage />*/}
       <SobreMiPage />
       <ContactoPage />
       <BotonWhats />

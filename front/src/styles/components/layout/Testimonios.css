@@ -7,6 +7,8 @@
     margin: 0 auto;
     max-width: 83%;
     background-color: #ffce8e;
+    background: #1f1e2a;
+    
 
     /*background-color: #ffaad2;*/
     /*background-color: #06afd2;*/
@@ -16,12 +18,28 @@
 
 .card-header {
     color: grey;
+    color: #a9edeb;
+    color:#1f1e2a;
+    color: #eddac5;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 900;
     font-style: italic;
+    border-bottom: 1px solid #eddac5;
 }
 
 .blockquote-footer {
     margin-top: 5px;
     margin-bottom: 5px !important;
+    color: #a9edeb;
+    color: #1f1e2a;
+    color: #eddac5;
+    font-weight: 900;
+}
+
+.testimony-carrousel p {
+    color: #104164;
+    font-weight: 900;
+    font-style: italic;
+    color: whitesmoke;
+
 }

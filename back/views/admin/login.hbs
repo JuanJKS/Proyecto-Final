@@ -1,4 +1,8 @@
-<div class="container-lg iniciar-sesion">
+<div class="container-lg login">
+    <div class="container-logo-login">
+        <h1 class="title-logo">PROFEJUAN</h1>
+        <img class="img-logo" src="/images/Logo.png" alt="Clases Particulares" />
+    </div>
     <form action="/admin/login" method="post" class="row g-3 needs-validation" novalidate>
         <div class="col-12">
             <label for="validationCustom01" class="form-label">Usuario</label>
@@ -15,7 +19,7 @@
             </div>
         </div>
         <div class="col-12">
-            <button class="btn btn-primary boton-form" type="submit">Ingresar</button>
+            <button class="btn btn-primary" type="submit"><span>Ingresar</span></button>
         </div>
     </form>
     {{#if error}}
