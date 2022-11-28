@@ -1,9 +1,5 @@
 .whatsapp-button {
-    background: linear-gradient(90deg,#00bb2d 0%, #00ff00 80%);
-
-    /*background: linear-gradient(180deg,#0856bc 1%, #ffaad2 90%);*/
-    /*background: linear-gradient(180deg,#03fee0 1%, #0856bc 90%);*/
-
+    background: rgb(77,194,71);
     font-size: 40px;
     list-style: none;
     display: flex;
@@ -21,16 +17,10 @@
 }
 
 .whatsapp-button li a {
-    color: white;
+    color: whitesmoke;
 }
 
 .whatsapp-button:hover {
-    /*background: linear-gradient(180deg,#03fee0 1%, #0856bc 90%);
-    background: linear-gradient(180deg,#36a1cd 0%, #104164 90%);*/
-    /*filter: brightness(1.1);*/
-    filter: saturate(400%);
+    filter: saturate(200%);
     transition: .5s ease-in-out all;
-    
-    /*background: linear-gradient(90deg,#00bb2d 0%, #00ff00 80%);*/
-    /*background: linear-gradient(180deg,#0856bc 0%, #03fee0 90%);*/  
 }

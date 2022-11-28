@@ -1,15 +1,17 @@
-import './App.css';
+import React from 'react';
+
 import Header from './components/layout/Header';
-import Footer from './components/layout/Footer';
+import BienvenidaPage from './pages/BienvenidaPage';
 import HomePage from './pages/HomePage';
 import MatematicaPage from './pages/MatematicaPage';
 import FisicaPage from './pages/FisicaPage';
-import SobreMiPage from './pages/SobreMiPage';
 import MisClasesPage from './pages/MisClasesPage';
+import SobreMiPage from './pages/SobreMiPage';
 import ContactoPage from './pages/ContactoPage';
 import BotonWhats from './components/layout/BotonWhats';
-import BienvenidaPage from './pages/BienvenidaPage';
-import ClasesPagePrueba from './pages/ClasesPagePrueba';
+import Footer from './components/layout/Footer';
+
+import './App.css';
 
 function App() {
   window.addEventListener('load', function() {
@@ -43,8 +45,8 @@ function App() {
       threshold: 0.55
   });
 
-  observer.observe(welcomePageEl); 
-  observer.observe(homePageEl);
+    observer.observe(welcomePageEl); 
+    observer.observe(homePageEl);
     observer.observe(mathsPageEl);
     observer.observe(physicalPageEl);
     observer.observe(myClassesPageEl);
@@ -53,14 +55,13 @@ function App() {
   });
 
   return (
-    <div className="App">
+    <div className='App'>
       <Header />
       <BienvenidaPage />
       <HomePage />
       <MatematicaPage />
       <FisicaPage />
-      <ClasesPagePrueba />
-      {/*<MisClasesPage />*/}
+      <MisClasesPage />
       <SobreMiPage />
       <ContactoPage />
       <BotonWhats />

@@ -3,14 +3,10 @@
 }
 
 .card-body {
-    color: black;
     color: #eddac5;
 }
 
 .card-body.card-modalities {
-    background: linear-gradient(180deg,#ffce8e 1%, #ffaad2 90%);
-    background: #528ca7;
-    background: #104164;
     background: #1f1e2a;
 }
 

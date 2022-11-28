@@ -1,19 +1,10 @@
 .section-physical {
-    background: radial-gradient(circle farthest-corner at center center, #0856bc 0%, #06afd2 90%);
     background: #1f1e2a;
     color: #eddac5;
-    border-bottom: 10px solid #a9edeb;
     border-bottom: 5px solid #528ca7;
-    /*background: linear-gradient(90deg,#ffaad2 0%, #ffffff 90%);*/
-    /*background: radial-gradient(ellipse farthest-corner at top center, #06afd2 0%, #ffffff 90%);*/
-    /*background-color: #06afd2;*/
-    /*background: radial-gradient(circle farthest-side at center center, #ffaad2 0%, #06afd2 90%);*/
-    /*background-color: rgba(8, 86, 188, .5);*/
 }
 
-.section-physical h2 {
-    color: whitesmoke;
-    color: #a9edeb;
-    color: #528ca7;
-    color: #eddac5;
+.section-physical p {
+    line-height: normal;
+    letter-spacing: 1px;
 }

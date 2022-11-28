@@ -1,5 +1,4 @@
 .section-home {
-    background: linear-gradient(160deg,#0856bc 20%, #ffaad2 80%);
     background: #eddac5;
     color: #1f1e2a;
 }
@@ -14,28 +13,24 @@
 
 .carousel-item {
     background-color: transparent;
-    
-    /*background-color: #1b1b32;*/
-    /*background: linear-gradient(90deg,#ff0000 0%, #00ff00 80%);*/
 }
-
-/*NO ENTIENDO PORQUÉ ESTO DEJÓ DE SER NECESARIO PARA QUE EL CARROUSEL QUEDE BIEN (LA TENÍA EL MISMO DIV QUE TIENE LA CLASS CAROUSEL-ITEM)
-.centrar-imagen-padre {
-    text-align: center;
-}*/
 
 .img-carrousel {
-    margin: 0px auto;
+    margin: 0 auto;
+    max-width: 80%;
+    max-height: 400px;
 }
+
+/*.carrousel-home .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23fff%27%3e%3cpath d=%27M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z%27/%3e%3c/svg%3e");
+}*/
 
 .total-container h6 {
     line-height: 150%;
-    font-weight: bold;
     font-weight: 900;
 }
 
 .total-container h6 span {
-    /*font-weight: bold;*/
     font-style: italic;
 }
 
@@ -47,6 +42,7 @@
 .row-grid-home p {
     line-height: 170%;
 }
+
 
 @media (max-width: 767px) {
     .row-grid-home {

@@ -17,15 +17,11 @@
 .container-file-img img {
     width: 100%;
     border-radius: 15px;
-    box-shadow: 5px 5px 50px 0px rgba(128,128,245,0.75);
-    box-shadow: 3px 3px 30px 0px rgba(82,140,167,0.75);
-    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
 }
 
-.file-reverse .container-file-img img {
-    box-shadow: 5px 5px 30px 0px rgba(3,254,224,0.75);
-    box-shadow: 3px 3px 30px 0px rgba(82,140,167,0.75);
-}
+/*.file-reverse .container-file-img img {
+    box-shadow: 8px 7px 5px 0px rgba(82,140,167,0.55);
+}*/
 
 .container-file-text {
     padding: 15px;

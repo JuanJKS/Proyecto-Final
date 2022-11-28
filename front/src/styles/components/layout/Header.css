@@ -5,7 +5,6 @@
     z-index: 100;
     border-bottom: 1px solid grey;
     background: #104164;
-    /*background: #5cc2df;*/
 }
 
 @media (max-width: 991px) {

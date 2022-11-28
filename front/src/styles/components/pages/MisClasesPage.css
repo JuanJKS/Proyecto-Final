@@ -1,16 +1,9 @@
 .section-myclasses {
-    background-color: whitesmoke;
     background: #eddac5;
 }
 
 .section-myclasses h2 {
-    color: grey;
     color: #1f1e2a;
-
-    /*color: #ffaad2;*/
-    /*color: #ffce8e;*/
-    /*color: #06afd2;*/
-    /*color: #0856bc;*/
 }
 
 .container-cards {
@@ -20,6 +13,12 @@
 .secondary-title {
     margin-top: 50px;
     margin-bottom: 20px;
+}
+
+.loading-message {
+    font-size: 30px;
+    font-weight: 900;
+    color: #1f1e2a;
 }
 
 .carousel-indicators {

@@ -1,13 +1,7 @@
 .section-contact {
-    background: linear-gradient(180deg,#0856bc 1%, #ffaad2 90%);
     background: #528ca7;
     color: #1f1e2a;
     font-weight: 900;
-
-    /*background: radial-gradient(ellipse farthest-corner at top center, #0856bc 0%, #ffffff 90%);*/
-    /*background: linear-gradient(180deg,#ffaad2 1%, #0856bc 90%);*/
-    /*background: linear-gradient(180deg,#ffce8e 1%, #ffaad2 90%);*/
-    /*background: linear-gradient(180deg,#0856bc 1%, #ffce8e 90%);*/
 }
 
 .section-contact h2 {
@@ -33,18 +27,47 @@
 }
 
 .button-form {
-    background-color: #0856bc;
     background: #1f1e2a;
     border: none;
 
-    /*background-color: #03fee0;*/
-    /*background: linear-gradient(180deg,#0856bc 0%, #03fee0 90%);*/
-    /*background: linear-gradient(180deg,#ffce8e 1%, #ffaad2 90%);*/
+
+    position: relative;
+    transition: .7s ease all;
+    overflow: hidden;
 }
 
-.button-form:hover {
-    background: linear-gradient(180deg,#36a1cd 0%, #104164 90%);
-    /*background: linear-gradient(180deg,#0856bc 1%, #ffaad2 90%);*/
+.button-form span {
+    position: relative;
+    z-index: 2;
+    transition: .7s ease all;
+}
+
+.button-form::after {
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .7s ease-in-out all;
+    border-radius: 50%;
+    transform-origin: center;
+}
+
+.btn-primary:hover {
+    --bs-btn-hover-bg: #0e1726;
+}
+
+.button-form:hover::after {
+    transform: scale(250);
+    background: #104164;
+}
+
+.sending-message {
+    padding-top: 10px;
+    font-size: 25px;
 }
 
 .container-maps {
@@ -59,23 +82,25 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    color: black;
     font-size: 20px;
     font-weight: 700;
     padding-top: 180px;
-    padding-bottom: 65px;
+    padding-bottom: 29px;
+}
+
+.container-col-final-contact h3 {
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+.container-col-final-contact p {
+    font-weight: 900;
 }
 
 .container-final-contact .div-quadrants-icons {
     transition-property: all;
     transition-duration: 0.99999999999s;
-    color: #0856bc;
     color: #1f1e2a;
-
-    /*color: #ffaad2;*/
-    /*color: #ffce8e;*/
-    /*color: #06afd2;*/
-    /*color: #03fee0;*/
 }
 
 .container-col-final-contact:hover .div-quadrants-icons {
@@ -84,11 +109,12 @@
     transition-duration: 0.9999999999s;
 }
 
+
 @media (max-width: 1199px) {
     .container-final-contact {
         padding: 0;
         font-size: 18px;
-    } 
+    }
 
     .container-col-final-contact {
         padding: 10px 0;

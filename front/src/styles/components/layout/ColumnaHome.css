@@ -4,7 +4,6 @@
 }
 
 .div-quadrants-icons {
-    color: white;
     color: #528ca7;
     display: flex;
     justify-content: center;
@@ -14,7 +13,7 @@
 }
 
 .div-quadrants-icons:hover {
-    transform: translate(1px,27px);
+    transform: translate(1px,7px);
     transition-property: all;
     transition-duration: 0.5s;
 }
@@ -24,7 +23,6 @@
 }
 
 .div-quadrants-text h5 {
-    font-weight: 100;
     font-weight: 900;
 }
 

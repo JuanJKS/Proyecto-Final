@@ -6,15 +6,13 @@
 html,
 body {
   color: white;
-  /*font-family: 'Hammersmith One', sans-serif;*/
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
-  /*line-height: 20px;*/
 }
 
 .total-container {
     padding-top: 70px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .important-title {

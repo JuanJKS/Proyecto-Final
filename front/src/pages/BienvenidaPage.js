@@ -4,7 +4,7 @@ import '../styles/components/pages/BienvenidaPage.css';
 
 const BienvenidaPage = (props) => {
     return (
-        <div id='welcome' className="container-background"></div> 
+        <div id='welcome' className='container-background'></div> 
     );
 }
 
