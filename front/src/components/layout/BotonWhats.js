@@ -6,7 +6,7 @@ import '../../styles/components/layout/BotonWhats.css';
 const BotonWhats = (props) => {
     return (
         <div className='whatsapp-button'>
-            <li><a href='https://web.whatsapp.com/' target='_blank' rel='noreferrer noopener'><AiOutlineWhatsApp /></a></li>   
+            <li><a href='https://web.whatsapp.com/' target='_blank' rel='noreferrer'><AiOutlineWhatsApp /></a></li>   
         </div>         
     );
 }
