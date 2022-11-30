@@ -10,6 +10,10 @@ body {
   font-size: 16px;
 }
 
+.App {
+  overflow: hidden;
+}
+
 .total-container {
     padding-top: 70px;
     padding-bottom: 40px;
