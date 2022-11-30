@@ -105,6 +105,21 @@
 }
 
 
+@media (max-width: 515px) {
+    .navbar-brand {
+        margin-right: 0;
+    } 
+
+    .navbar-brand h2 {
+        font-size: 40px;
+    }
+
+    .navbar-toggler {
+        margin-right: 10px;
+    }
+}
+
+
 @media (max-width: 458px) {
     .navbar-toggler {
         margin-left: 10px;
