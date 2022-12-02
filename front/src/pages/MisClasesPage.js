@@ -14,7 +14,7 @@ const MisClasesPage = (props) => {
     useEffect(() => {
         const cargarOpiniones = async () => {
             setLoading(true);
-            const response = await axios.get('http://localhost:3000/api/opiniones');
+            const response = await axios.get('http://backend:3000/api/opiniones');
             setOpiniones(response.data);
             setLoading(false);
         };
